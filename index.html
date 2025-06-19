@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto Detailing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <title>Expert Car Detailing in Mesa, AZ | Montero Detailing</title>
+  <meta name="description" content="Professional car detailing services in Mesa, AZ. Quality cleaning, polishing, and protection for your vehicle. Get a free estimate today!" />
+
+  <style>
+    @media (max-width: 991px) {
+    .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.95); /* Light backdrop */
+  }
+
+  .navbar-nav .nav-link {
+    color: #000 !important; /* Make links dark for readability */
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1); /* Make toggler icon visible on dark backgrounds */
+  }
+}
+
+    body {
+      background-color: black;
+      color: #ffffff;
+    }
+    .navbar {
+      background-color: black;
+      height: 100px;
+    }
+    .navbar-brand img {
+      height: auto;
+      width: 165px;
+    }
+    .hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* adds a dark overlay */
+  z-index: 1;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.btn-warning {
+  background-color: #efb140;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #d49b2c;
+  color: #000;
+}
+
+    .section-header {
+      color: #efb140;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background-color: #efb140;
+      border: none;
+    } 
+    .map {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+    .nav-link {
+        color: white;
+    }
+    .star-rating {
+        color: white;
+    }
+    .number {
+        color: #efb140;
+    }
+    .btn {
+        background-color: #efb140;
+    }
+    #testimonials {
+  background-color: #111; /* dark background to match branding */
+  color: #fff;
+}
+
+#testimonials .section-header {
+  color: #efb140;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#testimonials .card {
+  background-color: #1c1c1c;
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#testimonials .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+#testimonials .star-rating i {
+  color: #efb140;
+}
+
+@media (min-width: 992px) {
+  #testimonials .row {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+.footer {
+    background-color: black;
+}
+.instagram-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.instagram-btn:hover {
+  background-color: #efb140;
+  color: black;
+  border-color: #efb140;
+}
+#services .btn.card-title {
+  color: #1c1b17;
+  font-weight: 500;  /* same as card-title */
+  font-size: 1.25rem; /* adjust if needed */
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg px-3 sticky-top">
+    <a class="navbar-brand" href="#home">
+      <img class="logo" src="./img/logo.png" alt="Logo"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="./pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <img src="./img/hero.png" alt="Hero Image" />
+    <div class="content">
+      <h1 class="display-4 fw-bold mb-3">Luxury Details Right At Your Doorstep</h1>
+      <p class="lead mb-4">Professional. Affordable. Mobile.</p>
+      <a href="#contact" class="btn btn-warning text-dark px-4 py-2 fw-semibold">Get in Touch</a>
+    </div>
+  </section>
+  
+
+  <!-- About -->
+  <section class="text-center py-5 text-white" style="background-color: #111;">
+    <div class="container">
+      <h2 class="mb-4 text-warning">Montero Detailing</h2>
+      <p class="lead mb-3">
+        We bring top-notch car detailing services right to your driveway —
+        no hassle, no waiting rooms, just high-quality care at your convenience.
+      </p>
+      <p class="mb-3">
+        Whether you're looking to restore that showroom shine, deep-clean the interior,
+        or protect your paint for the long haul, we treat every vehicle with the attention it deserves.
+      </p>
+      <p>
+        Our team uses premium products, proven techniques, and a passion for perfection to
+        deliver results that go beyond clean — it’s a transformation. Serving Mesa, AZ and 
+        surrounding areas.
+      </p>
+    </div>
+  </section>
+  
+
+  <!-- Services -->
+  <section class="py-5 bg-dark text-white" id="services">
+    <div class="container">
+      <h2 class="text-center mb-4" style="color: #efb140;">Our Services</h2>
+      <div class="row text-center">
+  
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 shadow" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-body">
+              <i class="bi bi-droplet-half display-4 mb-3" style="color: #1c1b17;"></i>
+              <h5 class="card-title">Auto Detailing Work</h5>
+              <p class="card-text">Thorough detailing to provide a spotless car through proven techniques.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 shadow" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-body">
+              <i class="bi bi-brush display-4 mb-3" style="color: #1c1b17;"></i>
+              <h5 class="card-title">Interior Detailing</h5>
+              <p class="card-text">Vacuum, shampoo, and deep clean to restore your interior to like-new.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 shadow" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-body">
+              <i class="bi bi-stars display-4 mb-3" style="color: #1c1b17;"></i>
+              <h5 class="card-title">Car Wash</h5>
+              <p class="card-text">Premium wash with professional grade supplies for that new car look.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100 shadow" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-body">
+              <i class="bi bi-bucket display-4 mb-3" style="color: #1c1b17;"></i>
+              <h5 class="card-title">Handwashing</h5>
+              <p class="card-text">Thorough hand wash and dry to leave your vehicle spotless and shiny.</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+  
+      <!-- Prices Link -->
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <a href="pricing.html" class="btn btn-outline-warning mt-3 ms-md-2 card-title">View Prices</a>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+  
+  
+
+  <section class="py-5 text-center" id="testimonials">
+    <div class="container">
+      <h2 class="section-header">What Our Clients Say</h2>
+      <div class="row justify-content-center g-4 mt-4">
+  
+        <div class="col-md-6 col-lg-5">
+          <div class="card p-3 h-100">
+            <div class="star-rating mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>“Good communication and coordination. Felt like they took their time, did a great job. Presented a before and after with a breakdown of the end result. 10/10 recommend, intend on using them again.”</p>
+            <small><strong>- Cody G.</strong></small>
+          </div>
+        </div>
+  
+        <div class="col-md-6 col-lg-5">
+          <div class="card p-3 h-100">
+            <div class="star-rating mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>“Made my car look brand new, used it for work everyday, now I have a comfortable ride.”</p>
+            <small><strong>- Anyenid G.</strong></small>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  <!-- Contact & Map Section -->
+  <section class="py-5" id="contact">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <h2 class="mb-3">Get in Touch</h2>
+          <p>Call us at <a class="number" href="tel:1234567890">(602) 802-5520</a> or fill out the form below and we’ll be in touch shortly.</p>
+          <form id="contact-form">
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="John" required>
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="(123) 456-7890" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Let us know what you're looking for..."></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+  
+  
+        <!-- Embedded Google Map -->
+        <div class="col-md-6">
+          <h2 class="mb-3">Our Location</h2>
+          <div class="ratio ratio-4x3">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106859.24388502048!2d-111.8438666!3d33.4151843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba86b0894bfa3%3A0xbee13c99b3bdb346!2sMesa%2C%20AZ!5e0!3m2!1sen!2sus!4v1718664624735!5m2!1sen!2sus" 
+                width="100%" height="100%" style="border:0;" 
+                allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer text-white py-5 mt-5">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start">
+  
+        <!-- Left Side -->
+        <div class="col-md-6 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+          <h4 class="text-warning mb-2">Montero Detailing</h4>
+          <img src="./img/logo.png" alt="Montero Detailing Logo" style="max-width: 150px;" class="mb-3" />
+          <a href="https://www.instagram.com/montero_detailing" target="_blank" class="btn btn-outline-light instagram-btn px-3 py-1 d-inline-flex align-items-center">
+            <i class="fab fa-instagram me-2"></i> Follow on Instagram
+          </a>
+        </div>
+  
+        <!-- Right Side -->
+        <div class="col-md-6">
+          <h5 class="text-warning">Business Hours</h5>
+          <ul class="list-unstyled small mb-0">
+            <li><strong>Mon</strong>: Closed</li>
+            <li><strong>Tue</strong>: 3:30 PM – 7:30 PM</li>
+            <li><strong>Wed</strong>: 1:30 PM – 7:30 PM</li>
+            <li><strong>Thu</strong>: Closed</li>
+            <li><strong>Fri</strong>: 3:30 PM – 7:30 PM</li>
+            <li><strong>Sat</strong>: 6:30 AM – 7:30 AM</li>
+            <li><strong>Sun</strong>: 6:30 AM – 7:30 PM</li>
+          </ul>
+        </div>
+  
+      </div>
+  
+      <!-- Rights Reserved Line -->
+      <hr class="border-secondary my-4" />
+      <p class="text-center small mb-0">&copy; 2025 Montero Detailing. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    duration: 800, // animation duration in ms
+    easing: 'ease-in-out',
+    once: true, // whether animation should happen only once - while scrolling down
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init('7I5_gBx7WY4WPOsBb');  // Your EmailJS public key
+  
+    const form = document.getElementById('contact-form');
+  
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+  
+      emailjs.send('service_hne1zgl', 'template_umwpsyh', {
+        first_name: document.getElementById("firstName").value,
+        last_name: document.getElementById("lastName").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        message: document.getElementById("message").value
+      }).then(function() {
+        alert('Message sent successfully!');
+        form.reset();
+      }, function(error) {
+        alert('Failed to send message.');
+        console.error('EmailJS Error:', error);
+      });
+    });
+  </script>
+
+  
+  
+  
+ 
+</body>
+</html>
