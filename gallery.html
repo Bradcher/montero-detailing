@@ -11,122 +11,141 @@
   <meta name="description" content="View our professional car detailing before and after photos. See why Montero Detailing is Mesa, AZ’s trusted choice for vehicle care." />
 
   <style>
-    /* Original navbar and general styles */
-.navbar {
-  background-color: black;
-  height: 100px;
-}
-.navbar-brand img {
-  height: auto;
-  width: 165px;
-}
-@media (max-width: 991px) {
-  .navbar-collapse {
-    background-color: rgba(255, 255, 255, 0.95); /* Light backdrop */
-  }
-  .navbar-nav .nav-link {
-    color: #000 !important; /* Make links dark for readability */
-    padding: 1rem;
-    border-bottom: 1px solid #ddd;
-  }
-  .navbar-toggler-icon {
-    filter: invert(1); /* Make toggler icon visible on dark backgrounds */
-  }
-}
-.nav-link {
-  color: white;
-}
-
-/* Gallery section padding */
-.gallery-section {
-  padding: 60px 0;
-}
-
-/* Updated gallery image styles with effects */
-.gallery-img {
-  width: 100%;
-  height: 250px; /* fixed height for uniform look */
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  display: block;
-  opacity: 0;
-  animation: fadeInUp 0.8s forwards;
-}
-
-/* Fade-in animation on page load */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.gallery-img:hover, 
-.gallery-img:focus {
-  transform: scale(1.05) translateY(-6px);
-  box-shadow: 0 12px 20px rgba(0,0,0,0.35);
-  z-index: 2;
-  outline: none;
-}
-
-/* Optional caption overlay container */
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-/* Caption overlay, initially hidden */
-.gallery-caption {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 12px 10px;
-  background: rgba(0,0,0,0.5);
-  color: #efb140;
-  font-weight: 600;
-  font-size: 1rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  text-align: center;
-}
-
-/* Show caption on hover or focus */
-.gallery-item:hover .gallery-caption,
-.gallery-item:focus-within .gallery-caption {
-  opacity: 1;
-}
-
-/* Responsive height adjustment for smaller screens */
-@media (max-width: 767px) {
-  .gallery-img {
-    height: 180px;
-  }
-}
-.footer {
-    background-color: black;
-}
-.instagram-btn {
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.instagram-btn:hover {
-  background-color: #efb140;
-  color: black;
-  border-color: #efb140;
-}
-  </style>
+    /* General navbar and branding */
+    .navbar {
+      background-color: black;
+      height: 100px;
+    }
+    
+    .navbar-brand {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    
+    .logo {
+      width: 165px;
+      height: auto;
+    }
+    
+    @media (max-width: 576px) {
+      .logo {
+        width: 120px;
+      }
+    }
+    
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.95);
+      }
+    
+      .navbar-nav .nav-link {
+        color: #000 !important;
+        padding: 1rem;
+        border-bottom: 1px solid #ddd;
+      }
+    
+      .navbar-toggler-icon {
+        filter: invert(1);
+      }
+    }
+    
+    .nav-link {
+      color: white;
+    }
+    
+    /* Gallery section padding */
+    .gallery-section {
+      padding: 60px 0;
+    }
+    
+    /* Updated gallery image styles with effects */
+    .gallery-img {
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      display: block;
+      opacity: 0;
+      animation: fadeInUp 0.8s forwards;
+    }
+    
+    /* Fade-in animation on page load */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .gallery-img:hover,
+    .gallery-img:focus {
+      transform: scale(1.05) translateY(-6px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.35);
+      z-index: 2;
+      outline: none;
+    }
+    
+    /* Optional caption overlay container */
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    
+    /* Caption overlay */
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 12px 10px;
+      background: rgba(0,0,0,0.5);
+      color: #efb140;
+      font-weight: 600;
+      font-size: 1rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      text-align: center;
+    }
+    
+    .gallery-item:hover .gallery-caption,
+    .gallery-item:focus-within .gallery-caption {
+      opacity: 1;
+    }
+    
+    /* Responsive gallery adjustment */
+    @media (max-width: 767px) {
+      .gallery-img {
+        height: 180px;
+      }
+    }
+    
+    /* Footer and Instagram button */
+    .footer {
+      background-color: black;
+    }
+    
+    .instagram-btn {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .instagram-btn:hover {
+      background-color: #efb140;
+      color: black;
+      border-color: #efb140;
+    }
+    </style>
+    
 </head>
 <body class="bg-dark text-white">
 
